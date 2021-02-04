@@ -1,0 +1,19 @@
+name: vlc-ios
+on:
+  release
+  #push
+
+jobs:
+
+  build:
+
+    runs-on: macos-11.0
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v2
