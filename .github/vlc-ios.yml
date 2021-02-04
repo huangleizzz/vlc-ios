@@ -14,3 +14,8 @@ jobs:
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v2
+        
+        - name: test
+         run: df -h
+
+
